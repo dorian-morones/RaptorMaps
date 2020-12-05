@@ -43,6 +43,7 @@ const MapboxGLMap = ({ geoData, position }) => {
               layout: {
                 "icon-image": "custom-marker",
                 "icon-allow-overlap": true,
+                "icon-rotate": ['get', 'bearing'],
               },
             });
           }

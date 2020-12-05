@@ -18,12 +18,11 @@ const MapModuleContainer = () => {
     if (geoDataPosition <= 15) {
       const interval = setInterval(() => {
         setGeoDataPosition(geoDataPosition + 1);
-      }, 1000);
+      }, 3000);
       return () => clearInterval(interval);
     }
   }, [geoDataPosition]);
 
-  console.log('geoDataPosition', geoDataPosition);
 
   return (
     <>

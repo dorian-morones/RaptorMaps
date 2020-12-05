@@ -7,7 +7,7 @@
 					"id": 0,
 					"name": "Tech 3",
 					"tsecs": 1592078400,
-					"bearing": 0
+					"bearing": 1
 				},
 				"geometry": {
 					"type": "Point",
@@ -423,7 +423,7 @@
 					"id": 9,
 					"name": "Tech 3",
 					"tsecs": 1592078880,
-					"bearing": 0
+					"bearing": 1
 				},
 				"geometry": {
 					"type": "Point",
@@ -579,7 +579,7 @@
 					"id": 12,
 					"name": "Tech 3",
 					"tsecs": 1592079060,
-					"bearing": 0
+					"bearing": 1
 				},
 				"geometry": {
 					"type": "Point",
@@ -818,7 +818,7 @@
 				"properties": {
 					"id": 16,
 					"name": "Tech 2",
-					"bearing": 0,
+					"bearing": 1,
 					"tsecs": 1592079300
 				},
 				"geometry": {
