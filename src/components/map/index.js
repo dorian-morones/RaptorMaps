@@ -1,16 +1,20 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useContext } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-
-const styles = {
-  width: "100vw",
-  height: "calc(100vh - 80px)",
-  position: "absolute",
-};
+import { GlobalContext } from "../../context/globalState";
+import geoData from '../../JSON/api_techician_response_data.json';
+import { MapContainer } from './styles/map';
 
 const MapboxGLMap = () => {
   const [map, setMap] = useState(null);
   const mapContainer = useRef(null);
+
+  const { lastRequest, data, updateLastDataRequest, updateGeoData } = useContext(GlobalContext);
+
+  useEffect(() => {
+    updateGeoData(geoData)
+    updateLastDataRequest(new Date())
+  }, []);
 
   useEffect(() => {
     mapboxgl.accessToken =
@@ -35,40 +39,7 @@ const MapboxGLMap = () => {
               type: "geojson",
               data: {
                 type: "FeatureCollection",
-                features: [
-                  {
-                    "type": "Feature",
-                    "properties": {
-                      "id": 0,
-                      "name": "Tech 3",
-                      "tsecs": 1592078400,
-                      "bearing": 0
-                    },
-                    "geometry": {
-                      "type": "Point",
-                      "coordinates": [
-                        -115.606391900599817,
-                        32.673693943392962
-                      ]
-                    }
-                  },
-                  {
-                    "type": "Feature",
-                    "properties": {
-                      "id": 0,
-                      "name": "Tech 1",
-                      "bearing": 87.0,
-                      "tsecs": 1592078400
-                    },
-                    "geometry": {
-                      "type": "Point",
-                      "coordinates": [
-                        -115.585908073767968,
-                        32.679083641964432
-                      ]
-                    }
-                  }
-                ],
+                features: data[0].features,
               },
             });
 
@@ -120,7 +91,7 @@ const MapboxGLMap = () => {
     if (!map) initializeMap({ setMap, mapContainer });
   }, [map]);
 
-  return <div ref={(el) => (mapContainer.current = el)} style={styles} />;
+  return <MapContainer ref={(el) => (mapContainer.current = el)} />;
 };
 
 export default MapboxGLMap;

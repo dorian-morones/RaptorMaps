@@ -1,0 +1,834 @@
+[
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 0,
+					"name": "Tech 3",
+					"tsecs": 1592078400,
+					"bearing": 0
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606391900599817,
+						32.673693943392962
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 0,
+					"name": "Tech 1",
+					"bearing": 87.0,
+					"tsecs": 1592078400
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.585908073767968,
+						32.679083641964432
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 0,
+					"name": "Tech 2",
+					"bearing": 270,
+					"tsecs": 1592078400
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590876702138573,
+						32.676567128293193
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 1,
+					"name": "Tech 3",
+					"tsecs": 1592078460,
+					"bearing": 181
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606424296348351,
+						32.673506838070466
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 1,
+					"name": "Tech 1",
+					"bearing": 90.0,
+					"tsecs": 1592078460
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.585937796370388,
+						32.678043350879868
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 1,
+					"name": "Tech 2",
+					"bearing": 181,
+					"tsecs": 1592078460
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590842025769078,
+						32.676527498156638
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 2,
+					"name": "Tech 3",
+					"tsecs": 1592078520,
+					"bearing": 180
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606424296348351,
+						32.673059210311912
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 2,
+					"name": "Tech 1",
+					"bearing": 271,
+					"tsecs": 1592078520
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.586165669655585,
+						32.678043350879868
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 2,
+					"name": "Tech 2",
+					"bearing": 182,
+					"tsecs": 1592078520
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590861840837363,
+						32.676527498156638
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 3,
+					"name": "Tech 3",
+					"tsecs": 1592078580,
+					"bearing": 90
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606415442172917,
+						32.673011988042873
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 3,
+					"name": "Tech 1",
+					"bearing": 273,
+					"tsecs": 1592078580
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.586948364852532,
+						32.678058212181078
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 3,
+					"name": "Tech 2",
+					"bearing": 182,
+					"tsecs": 1592078580
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590797441865462,
+						32.676368977610423
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 5,
+					"name": "Tech 3",
+					"tsecs": 1592078640,
+					"bearing": 87
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606236391069487,
+						32.673015923231958
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 5,
+					"name": "Tech 1",
+					"bearing": 92.0,
+					"tsecs": 1592078640
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.586953318619607,
+						32.677840246430023
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 5,
+					"name": "Tech 2",
+					"bearing": 181,
+					"tsecs": 1592078640
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590802395632522,
+						32.676012306381423
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 6,
+					"name": "Tech 3",
+					"tsecs": 1592078700,
+					"bearing": 2
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606238358664029,
+						32.673185136362669
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 6,
+					"name": "Tech 1",
+					"bearing": 91.0,
+					"tsecs": 1592078700
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.586953318619607,
+						32.677572743008277
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 6,
+					"name": "Tech 2",
+					"bearing": 180,
+					"tsecs": 1592078700
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590807349399597,
+						32.675680403987776
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 7,
+					"name": "Tech 3",
+					"tsecs": 1592078760,
+					"bearing": 3
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606243277650393,
+						32.673359268479736
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 7,
+					"name": "Tech 1",
+					"bearing": 94.0,
+					"tsecs": 1592078760
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.586958272386681,
+						32.677310193353605
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 7,
+					"name": "Tech 2",
+					"bearing": 193,
+					"tsecs": 1592078760
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590817256933732,
+						32.675650681385363
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 8,
+					"name": "Tech 3",
+					"tsecs": 1592078820,
+					"bearing": 2
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606242293853114,
+						32.673532416799524
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 8,
+					"name": "Tech 1",
+					"bearing": 88.0,
+					"tsecs": 1592078820
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.586963226153742,
+						32.676988198494094
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 8,
+					"name": "Tech 2",
+					"bearing": 187,
+					"tsecs": 1592078820
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590807349399597,
+						32.675596189947598
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 9,
+					"name": "Tech 3",
+					"tsecs": 1592078880,
+					"bearing": 0
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606300337892137,
+						32.673592428433089
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 9,
+					"name": "Tech 1",
+					"bearing": 91.0,
+					"tsecs": 1592078880
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.586958272386681,
+						32.676586943361478
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 9,
+					"name": "Tech 2",
+					"bearing": 188,
+					"tsecs": 1592078880
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590817256933732,
+						32.675353455361197
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 10,
+					"name": "Tech 3",
+					"tsecs": 1592078940,
+					"bearing": 288
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.60638002547114,
+						32.673646537283027
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 10,
+					"name": "Tech 1",
+					"bearing": 90.0,
+					"tsecs": 1592078940
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587305036081531,
+						32.676577035827336
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 10,
+					"name": "Tech 2",
+					"bearing": 90,
+					"tsecs": 1592078940
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.590807349399597,
+						32.675140443377217
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 11,
+					"name": "Tech 3",
+					"tsecs": 1592079000,
+					"bearing": 290
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606407571794733,
+						32.673677034998441
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 11,
+					"name": "Tech 1",
+					"bearing": 271,
+					"tsecs": 1592079000
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587557678202074,
+						32.676562174526133
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 11,
+					"name": "Tech 2",
+					"bearing": 91,
+					"tsecs": 1592079000
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.589712566877267,
+						32.675125582076006
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 12,
+					"name": "Tech 3",
+					"tsecs": 1592079060,
+					"bearing": 0
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606332803202108,
+						32.673721305875667
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 12,
+					"name": "Tech 1",
+					"bearing": 273,
+					"tsecs": 1592079060
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587666661077591,
+						32.67655226699199
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 12,
+					"name": "Tech 2",
+					"bearing": 93,
+					"tsecs": 1592079060
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.588954640515652,
+						32.675120628308939
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 13,
+					"name": "Tech 3",
+					"tsecs": 1592079120,
+					"bearing": 82
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.606253115623105,
+						32.673727208659294
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 13,
+					"name": "Tech 1",
+					"bearing": 272,
+					"tsecs": 1592079120
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587721152515357,
+						32.676572082060268
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 13,
+					"name": "Tech 2",
+					"bearing": 94,
+					"tsecs": 1592079120
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587993609704199,
+						32.675110720774803
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 14,
+					"name": "Tech 3",
+					"tsecs": 1592079180,
+					"bearing": 91
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.605822212418161,
+						32.673735079037463
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 14,
+					"name": "Tech 1",
+					"bearing": 85,
+					"tsecs": 1592079180
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587755828884838,
+						32.676562174526133
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 14,
+					"name": "Tech 2",
+					"bearing": 90,
+					"tsecs": 1592079180
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.586983041222055,
+						32.675110720774803
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 15,
+					"name": "Tech 3",
+					"tsecs": 1592079240,
+					"bearing": 90
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.605277188729715,
+						32.673734095240192
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 15,
+					"name": "Tech 1",
+					"bearing": 87,
+					"tsecs": 1592079240
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587780597720197,
+						32.676562174526133
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 15,
+					"name": "Tech 2",
+					"bearing": 270,
+					"tsecs": 1592079240
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587686476145905,
+						32.675130535843081
+					]
+				}
+			}
+		]
+	},
+	{
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 16,
+					"name": "Tech 3",
+					"tsecs": 1592079360,
+					"bearing": 91
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.604789225283056,
+						32.673730160051107
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 16,
+					"name": "Tech 1",
+					"bearing": 90,
+					"tsecs": 1592079300
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587745921350702,
+						32.676532451923713
+					]
+				}
+			},
+			{
+				"type": "Feature",
+				"properties": {
+					"id": 16,
+					"name": "Tech 2",
+					"bearing": 0,
+					"tsecs": 1592079300
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						-115.587686476145905,
+						32.675819109465721
+					]
+				}
+			}
+		]
+	}
+]
