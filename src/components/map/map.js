@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { MapContainer } from "./styles/map";
-import Turf from "turf";
 
 const MapboxGLMap = ({ geoData, position }) => {
   const [map, setMap] = useState(null);
@@ -50,13 +49,6 @@ const MapboxGLMap = ({ geoData, position }) => {
           }
         );
 
-        if(geoData !== undefined){
-          console.log('geoData', geoData)
-          let line = Turf.lineString([geoData[0].geometry.coordinates, geoData[1].geometry.coordinates]);
-          let length = Turf.lineDistance(line, 'miles');
-          console.log('length', line);
-          console.log('length', length);
-        }
         // Create a popup, but don't add it to the map yet.
         var popup = new mapboxgl.Popup({
           closeButton: false,
