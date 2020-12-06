@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { MapContainer } from "./styles/map";
+import Turf from "turf";
 
 const MapboxGLMap = ({ geoData, position }) => {
   const [map, setMap] = useState(null);
@@ -43,12 +44,19 @@ const MapboxGLMap = ({ geoData, position }) => {
               layout: {
                 "icon-image": "custom-marker",
                 "icon-allow-overlap": true,
-                "icon-rotate": ['get', 'bearing'],
+                "icon-rotate": ["get", "bearing"],
               },
             });
           }
         );
 
+        if(geoData !== undefined){
+          console.log('geoData', geoData)
+          let line = Turf.lineString([geoData[0].geometry.coordinates, geoData[1].geometry.coordinates]);
+          let length = Turf.lineDistance(line, 'miles');
+          console.log('length', line);
+          console.log('length', length);
+        }
         // Create a popup, but don't add it to the map yet.
         var popup = new mapboxgl.Popup({
           closeButton: false,
@@ -61,6 +69,7 @@ const MapboxGLMap = ({ geoData, position }) => {
 
           var coordinates = e.features[0].geometry.coordinates.slice();
           var description = e.features[0].properties.name;
+          var lastUpdate = e.features[0].properties.tsecs;
 
           // Ensure that if the map is zoomed out such that multiple
           // copies of the feature are visible, the popup appears
@@ -71,7 +80,14 @@ const MapboxGLMap = ({ geoData, position }) => {
 
           // Populate the popup and set its coordinates
           // based on the feature found.
-          popup.setLngLat(coordinates).setHTML(description).addTo(map);
+          popup
+            .setLngLat(coordinates)
+            .setHTML(
+              `<h4>${description}</h4> <p>last updated: ${Math.floor(
+                lastUpdate / 60
+              )}</p>`
+            )
+            .addTo(map);
         });
 
         map.on("mouseleave", "tech", function () {

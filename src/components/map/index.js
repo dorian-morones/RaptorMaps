@@ -23,7 +23,6 @@ const MapModuleContainer = () => {
     }
   }, [geoDataPosition]);
 
-
   return (
     <>
       {data && data?.length > 0 ? (
