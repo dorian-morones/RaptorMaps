@@ -4,10 +4,16 @@ import MapboxGLMap from "./map";
 import geoData from "../../JSON/api_techician_response_data.json";
 import Turf from "turf";
 import { Loading } from './styles/loading';
+import {
+  Container,
+  MapModule,
+  AlertModule
+} from './styles/mapContainer';
 
 const MapModuleContainer = () => {
   const [geoDataPosition, setGeoDataPosition] = useState(0);
-  const [alert, setAlert] = useState('')
+  const [alert, setAlert] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
   const { data, updateLastDataRequest, updateGeoData } = useContext(
     GlobalContext
   );
@@ -32,26 +38,36 @@ const MapModuleContainer = () => {
   }, []);
 
   useEffect(() => {
+    setShowAlert(true)
+    if(alert !== ''){
+      setTimeout(() => {
+        setAlert('')
+        setShowAlert(false)
+      }, 2000);
+    }
+  }, [alert])
+
+  useEffect(() => {
     if (geoDataPosition <= 15) {
       const interval = setInterval(() => {
         setGeoDataPosition(geoDataPosition + 1);
         handleDistance(data[geoDataPosition + 1]?.features)
-      }, 1000);
+      }, 5000);
       return () => clearInterval(interval);
     }
   }, [geoDataPosition]);
 
   return (
-    <div>
-      <div>
+    <Container>
+      <MapModule>
         {data && data?.length > 0 ? (
           <MapboxGLMap geoData={data[geoDataPosition]?.features} position={geoDataPosition} />
         ) : (
             <Loading />
           )}
-      </div>
-      <div><p>{alert}</p></div>
-    </div>
+      </MapModule>
+      {showAlert && <AlertModule><span>{alert}</span></AlertModule>}
+    </Container>
   );
 };
 
