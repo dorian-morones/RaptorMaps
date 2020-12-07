@@ -2,14 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { MapContainer } from "./styles/map";
-
 const MapboxGLMap = ({ geoData, position }) => {
   const [map, setMap] = useState(null);
   const mapContainer = useRef(null);
 
   const handleMap = () => {
     mapboxgl.accessToken =
-      "pk.eyJ1IjoiYnJpYW5iYW5jcm9mdCIsImEiOiJsVGVnMXFzIn0.7ldhVh3Ppsgv4lCYs65UdA";
+      "pk.eyJ1IjoiZG9yaWFubXgzIiwiYSI6ImNrMTcwa2Z4cjAyb3czY254bW9uNWx5eTYifQ.6UUrz0l4ueqe5W4j8QGd4w";
     const initializeMap = ({ setMap, mapContainer }) => {
       const map = new mapboxgl.Map({
         container: mapContainer.current,
@@ -21,7 +20,7 @@ const MapboxGLMap = ({ geoData, position }) => {
 
       map.on("load", function () {
         map.loadImage(
-          "https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png",
+          "https://img.icons8.com/offices/344/north-direction.png",
           // Add an image to use as a custom marker
           function (error, image) {
             if (error) throw error;
@@ -44,10 +43,42 @@ const MapboxGLMap = ({ geoData, position }) => {
                 "icon-image": "custom-marker",
                 "icon-allow-overlap": true,
                 "icon-rotate": ["get", "bearing"],
+                "icon-size": 0.08,
               },
             });
           }
         );
+
+        map.addSource("maine", {
+          type: "geojson",
+          data: {
+            type: "Feature",
+            geometry: {
+              type: "Polygon",
+              coordinates: [
+                [
+                  [-115.585956, 32.664452],
+                  [-115.620723, 32.664646],
+                  [-115.620720, 32.679375],
+                  [-115.604862, 32.679991],
+                  [-115.595743, 32.679846],
+                  [-115.585860, 32.679496],
+                  [-115.585956, 32.664452],
+                ],
+              ],
+            },
+          },
+        });
+        map.addLayer({
+          id: "maine",
+          type: "fill",
+          source: "maine",
+          layout: {},
+          paint: {
+            "fill-color": "#f89e1b",
+            "fill-opacity": 0.5,
+          },
+        });
 
         // Create a popup, but don't add it to the map yet.
         var popup = new mapboxgl.Popup({
