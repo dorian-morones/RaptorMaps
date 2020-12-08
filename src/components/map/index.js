@@ -54,6 +54,8 @@ const MapModuleContainer = () => {
         handleDistance(data[geoDataPosition + 1]?.features)
       }, 5000);
       return () => clearInterval(interval);
+    } else {
+      // setGeoDataPosition(0)
     }
   }, [geoDataPosition]);
 
